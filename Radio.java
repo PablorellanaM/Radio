@@ -15,7 +15,15 @@ class Radio {
         emisorasGuardadas = new String[12];
         this.scanner = scanner; // Initialize the Scanner field
     }
+    public void encender() {
+        estaEncendido = true;
+        System.out.println("¡La radio ha cobrado vida!");
+    }
 
+    public void apagar() {
+        estaEncendido = false;
+        System.out.println("La radio se despide. ¡Hasta luego!");
+    }
     
     }
-}
+

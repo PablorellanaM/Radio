@@ -14,12 +14,22 @@ public class main {
                 case 1:
                     radio.encender();
                     break;
-                
+                    case 2:
+                    radio.cambiarBanda();
+                    break;
+                case 3:
+                    radio.sintonizarEmisora();
+                    break;
             }
         } while (opcion != 6);
 
         scanner.close();
     }
 
-   
+    private static void mostrarMenu() {
+        System.out.println("Menú de Operaciones Radiofónicas:");
+        System.out.println("1. Encender Radio");
+        System.out.println("2. Cambiar de Banda");
+        
+    }
 }
